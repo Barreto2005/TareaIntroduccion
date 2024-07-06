@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisión de Boletos del Metro</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Emisión de Boletos del Metro de Quito</h1>
+        <div id="menu">
+            <button id="startButton">Comenzar</button>
+        </div>
+        <div id="destinationMenu" class="hidden">
+            <label for="destination">Seleccione su destino:</label>
+            <select id="destination">
+                <option value="estacion1">Estación 1</option>
+                <option value="estacion2">Estación 2</option>
+                <option value="estacion3">Estación 3</option>
+                <option value="estacion3">Estación 4</option>
+                <option value="estacion3">Estación 5</option>
+            </select>
+            <button id="nextButton">Siguiente</button>
+        </div>
+        <div id="creditCardMenu" class="hidden">
+            <label for="creditCard">Ingrese su tarjeta de crédito:</label>
+            <input type="text" id="creditCard" placeholder="Número de tarjeta de crédito">
+            <button id="nextButtonCC">Siguiente</button>
+        </div>
+        <div id="personalIdMenu" class="hidden">
+            <label for="personalId">Ingrese su identificador personal:</label>
+            <input type="text" id="personalId" placeholder="Identificador personal">
+            <button id="submitButton">Emitir Boleto</button>
+        </div>
+        <div id="ticketMessage" class="hidden">
+            <p>Su boleto ha sido emitido y cargado a su cuenta de tarjeta de crédito.</p>
+            <button id="finishButton">Finalizar</button>
+        </div>
+    </div>
+    <script src="Main.js"></script>
+</body>
+</html>
